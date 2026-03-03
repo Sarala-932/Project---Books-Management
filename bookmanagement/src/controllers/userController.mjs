@@ -49,7 +49,7 @@ const login=async (req,res)=>{
         if (!isMatch) {
             return res.status(400).send({ message: "failed", error: "Invalid credentials" });
         }
-        const token = jwt.sign({ id: user._id,email: user.email }, config.secretToken, { expiresIn: '1h' });
+        const token = jwt.sign({ id: user._id,email: user.email }, config.secretToken);
         if(!token){
             return res.status(500).send({ message: "failed", error: "Internal Server Error" });
         }

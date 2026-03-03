@@ -10,7 +10,6 @@
   "version": "1.0.0",
   "description": "-  Branch name should follow the naming convention `project/booksManagement`\r - Follow the naming conventions exactly as instructed.",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
